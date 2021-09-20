@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Unifi</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo/logo.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <!-- Custom CSS Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 
+        ========================  P R E L O A D E R  =======================
+    -->
+    <div id="preloader">
+        <img loading="lazy" src="./assets/preloader/loader (2).gif" alt="preloader">
+    </div>
+
+    <!-- 
+        ========================  W R A P P E R  =======================
+    -->
+    <section id="wrapper">
+        <!-- 
+            ========================  S I D E B A R  =======================
+        -->
+        <section id="sidebar" class="shadow-sm">
+            <!-- Sidebar brand -->
+            <div class="sidebar-brand">
+                <span class="btn btn-primary mr-2 mb-2"><i class="fas fa-align-right"></i></span>
+                <span class="text text-primary">Uni</span><span class="text text-secondary">Fi</span>
+            </div>
+
+            <!-- Media Workspace -->
+            <div class="media p-3 rounded bg-light">
+                <div class="d-flex justify-content-center align-items-center" style="height: 35px; width: 35px;">
+                    <!-- image -->
+                    <img src="./assets/avatar/1.jpeg" class="img-fluid rounded-circle"  alt="">
+                </div>
+
+                <!-- text -->
+                <div class="media-body">
+                    <div class="row m-0 justify-content-between">
+                        <div class="col-9">                                
+                            <h6 class="font-weight-bold text-primary mb-0">Fine Arts</h6>
+                            <span class=" text-primary">Workspace</span>
+                        </div>
+                        <div class="col-2">
+                            <i class="fas fa-sync text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="list-unstyled sidebar-nav">
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Dashboard Link -->
+                    <a href="index.html" class="sidebar-link">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Commmunity Link -->
+                    <a href="community.html" class="sidebar-link">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Inspirations Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-book-open"></i>
+                        Inspirations
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Chat Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-comments"></i>
+                        Chat
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-user-friends"></i>
+                        Teachers
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Sidebar Item -->
+                <li class="sidebar-item dropdown">
+                    <!-- Account Link -->
+                    <a href="#account" class="sidebar-link" aria-expanded="false" data-toggle="collapse">
+                        <i class="fas fa-credit-card"></i>
+                        Account
+                        <!-- arrow -->
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="collapse list-unstyled" id="account">
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 1
+                            </a>
+                        </li>
+
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Sidebar Item -->
+                <li class="sidebar-item dropdown">
+                    <!-- Library Link -->
+                    <a href="#library" class="sidebar-link" aria-expanded="false" data-toggle="collapse">
+                        <i class="fas fa-book"></i>
+                        Library
+                        <!-- arrow -->
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="collapse list-unstyled" id="library">
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 1
+                            </a>
+                        </li>
+
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-question-circle"></i>
+                        Help
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="shortcut text-primary font-weight-bold">SHORTCUTS</h6>
+
+            <ul class="list-unstyled sidebar-nav">
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Subject/Courses Link -->
+                    <a href="subject.html" class="sidebar-link active">
+                        <i class="fas fa-edit"></i>
+                        Subject/Courses
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Academic Session Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-dharmachakra"></i>
+                        Academic Session
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Add shortcut Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-plus"></i>
+                        Add shortcut
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- 
+            ========================  M A I N - P A G E  =======================
+        -->
+        <section id="mainpage">
+            <!-- 
+                ========================  N A V B A R  =======================
+            -->
+            <nav class="navbar navbar-light py-3">
+                <a href="javascript:void(0)" id="sidebar-toggle" class="sidebar-brand">
+                    <span class="btn btn-primary mr-2 d-block d-xl-none"><i class="fas fa-align-right"></i></span>
+                </a>
+
+                <!-- navbar - nav -->
+                <ul class="navbar-nav d-flex flex-row ml-auto">
+                    <!-- nav-item -->
+                    <li class="nav-item">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" class="nav-link search bg-white shadow-sm">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- N O T I F I C A T I O N  -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link bg-white shadow-sm">
+                            <i class="far fa-bell"></i>
+                            <span class="badge badge-pill badge-danger">3</span>
+                        </a>
+                        <div class="dropdown-menu notification shadow-sm">
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            
+                        </div>
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown border-left border-right mx-2 p-0"></li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link">
+                            <img src="./assets/avatar/4.png" class="rounded-circle" width="40px" height="40px" alt="">
+                        </a>
+                        <!--  -->
+                        <div class="dropdown-menu shadow-sm">
+                            <p class="mb-0 border-bottom name">Hello Admin</p>
+                            <a href="#" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 
+                ========================  H E A D E R  =======================
+            -->
+            <header>
+                <div class="container-fluid">
+                    <!-- callout -->
+                    <h1 class="text-primary">Hello, Admin</h1>
+                    <!-- text -->
+                    <p class="text-muted">Royal Decency International College</p>
+                </div>
+            </header>
+ 
+
+           <section class="pageitems">
+                <div class="container-fluid">
+                    <div class="row">
+                         <!-- 
+                            |**************************************************| 
+                            |        L E F T       H A N D         SIDE        |
+                            |**************************************************| 
+                        -->
+                        <div class="col-lg-8 mb-5">
+                            <div class="card rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="class-info-form">
+                                    
+                                        <div class="row mb-5 mx-n4">
+                                            <div class="col-sm-9 mb-3">
+                                                <form class="d-sm-flex">
+                                                    <div class="form-group">
+                                                        <!-- Class -->
+                                                        <h5>Class</h5> 
+                                                        <select name="" class="custom-select" id="">
+                                                            <option value="">Jss1</option>
+                                                            <option value="">Jss2</option>
+                                                            <option value="">Jss3</option>
+                                                            <option value="">Sss1</option>
+                                                            <option value="">Sss2</option>
+                                                            <option value="">Sss3</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- class section -->
+                                                    <div class="form-group">
+                                                        <h5>Class Section</h5>
+                                                        <select name="" class="custom-select" id="">
+                                                            <option value="">Section A</option>
+                                                            <option value="">Section B</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- academic session -->
+                                                    <div class="form-group">
+                                                        <h5>Exam Section</h5>
+                                                        <select name="" class="custom-select" id="">
+                                                            <option value="">2019/20</option>
+                                                            <option value="">2020/21</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                           </div>
+
+                                           <!-- Grade setting -->
+                                           <div class="col-sm-3">
+                                               <button type="button" class="btn btn-primary py-2 px-3 float-right" data-toggle="modal" data-target="#gradeSettingModal"> <i class="fas fa-cog"></i> Grade Settings</button>
+
+                                               <!-- grade setting modal -->
+                                                <div class="modal fade" id="gradeSettingModal">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button data-dismiss="modal" class="close">
+                                                                    &times;
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of grade setting modal -->
+                                           </div>
+                                       </div>
+
+
+                                       <!-- Subject Nav Pills -->
+                                        <h5 class="text-primary">Subjects</h5>
+                                        <div class="card-subjects">
+                                            <ul class="nav nav-pills justify-content-between">
+                                                <!-- Subject One nav -->
+                                                <li class="nav-item">
+                                                    <!-- Link -->
+                                                    <a href="#subject-1" data-toggle="pill" class="subject-link active">
+                                                        <!-- card -->
+                                                        <div class="card rounded">
+                                                            <div class="card-body text-center">
+                                                                <!-- card icon -->
+                                                                <i class="fas fa-atom"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- card text -->
+                                                        <p class="text-muted">Mathematics</p>
+                                                    </a>
+                                                </li>
+
+                                                <!-- Subject Two nav -->
+                                                <li class="nav-item">
+                                                    <!-- Link -->
+                                                    <a href="#subject-2" data-toggle="pill" class="subject-link">
+                                                        <!-- card -->
+                                                        <div class="card rounded">
+                                                            <div class="card-body text-center">
+                                                                <!-- card icon -->
+                                                                <i class="fas fa-book"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- card text -->
+                                                        <p class="text-muted">English</p>
+                                                    </a>
+                                                </li>
+
+                                                <!-- Subject Three nav -->
+                                                <li class="nav-item">
+                                                    <!-- Link -->
+                                                    <a href="#subject-3" data-toggle="pill" class="subject-link">
+                                                        <!-- card -->
+                                                        <div class="card rounded">
+                                                            <div class="card-body text-center">
+                                                                <!-- card icon -->
+                                                                <i class="fas fa-globe-africa"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- card text -->
+                                                        <p class="text-muted">Social Studies</p>
+                                                    </a>
+                                                </li>
+
+                                                <!-- Subject Four nav -->
+                                                <li class="nav-item">
+                                                    <!-- Link -->
+                                                    <a href="#subject-4" data-toggle="pill" class="subject-link">
+                                                        <!-- card -->
+                                                        <div class="card rounded">
+                                                            <div class="card-body text-center">
+                                                                <!-- card icon -->
+                                                                <i class="fas fa-desktop"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- card text -->
+                                                        <p class="text-muted">Computer</p>
+                                                    </a>
+                                                </li>
+
+
+                                                <!-- All subjects Dropdown -->
+                                                <li class="nav-item">
+                                                   <div class="all-subjects position-relative">
+                                                       <!-- Dropdown button -->
+                                                        <button type="button" data-toggle="dropdown" class="dropdown-link btn d-flex align-items-center justify-content-center" style="width: 90px; height: 90px;">
+                                                            <!-- dropdown button icon -->
+                                                            <i class="fas fa-th text-primary" style="font-size: 30px;"></i>
+                                                        </button>
+
+                                                            <!-- select box form
+                                                        *********** it is hidden ********** -->
+                                                        <form>
+                                                            <div class="form-group position-absolute" style="top: -70px !important; opacity: 0;">
+                                                                <!-- select box -->
+                                                                <select name="" class="form-control" id="">
+                                                                    <!-- subject option -->
+                                                                    <option value="">Civic Education</option>
+                                                                    <!-- subject option -->
+                                                                    <option value="">Health Education</option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                   </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-content mt-5">
+                                <!-- Tab pane one -->
+                                <div class="tab-pane active" id="subject-1">
+                                    <!-- Tab pane title -->
+                                    <h4 class="text-primary">
+                                        Mathematics 
+                                    </h4>
+                                    <h6 class="text-primary">
+                                        Grade Report Sheet
+                                    </h6>
+
+                                    <!-- customised Table -->
+                                    <div class="table-responsive">
+                                       <div class="table text-primary">
+                                           <!-- table head -->
+                                            <div class="thead">
+                                                <!-- table head row -->
+                                                <div class="table-row bg-tertiary shadow-sm">
+                                                    <!-- checkbox -->
+                                                    <div class="checkbox border-right border-secondary">
+                                                        <!-- checkbox form -->
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <input type="checkbox" class="form-control" name="" id="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!-- Student ID -->
+                                                    <div class="Student-id border-left border-secondary pl-3">
+                                                        <span class="font-weight-bold">Student ID</span>
+                                                    </div>
+                                                    <!-- name -->
+                                                    <div class="name">
+                                                        <span class="font-weight-bold">Name</span>
+                                                    </div>
+                                                    <!-- CA1 -->
+                                                    <div class="ca1">
+                                                        <span class="font-weight-bold">CA1</span>
+                                                    </div>
+                                                    <!-- CA2 -->
+                                                    <div class="ca2">
+                                                        <span class="font-weight-bold">CA2</span>
+                                                    </div>
+                                                    <!-- Exams -->
+                                                    <div class="exams">
+                                                        <span class="font-weight-bold">Exams</span>
+                                                    </div>
+                                                    <!-- Delete (this is an empty div) -->
+                                                    <div class="delete"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Table body -->
+                                            <div class="tbody">
+                                                <!-- table row -->
+                                                <div class="table-row bg-white shadow-sm">
+                                                    <!-- checkbox -->
+                                                    <div class="checkbox border-right border-secondary">
+                                                        <!-- checkbox form -->
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <input type="checkbox" class="form-control" name="" id="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!-- Student ID -->
+                                                    <div class="Student-id border-left border-secondary pl-3">
+                                                        <span>01254</span>
+                                                    </div>
+                                                    <!-- Name -->
+                                                    <div class="name">
+                                                        <span>Williams C Williams</span>
+                                                    </div>
+                                                    <!-- CA1 -->
+                                                    <div class="ca1">
+                                                        <span>01</span>
+                                                    </div>
+                                                    <!-- CA2 -->
+                                                    <div class="ca2">
+                                                        <span>02</span>
+                                                    </div>
+                                                    <!-- exams -->
+                                                    <div class="exams">
+                                                        <span>45</span>
+                                                    </div>
+                                                    <!-- Delete div -->
+                                                    <div class="delete border-left border-secondary">
+                                                        <!-- delete button -->
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- table row -->
+                                                <div class="table-row bg-white shadow-sm">
+                                                    <!-- checkbox -->
+                                                    <div class="checkbox border-right border-secondary">
+                                                        <!-- checkbox form -->
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <input type="checkbox" class="form-control" name="" id="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!-- Student ID -->
+                                                    <div class="Student-id border-left border-secondary pl-3">
+                                                        <span>01234</span>
+                                                    </div>
+                                                    <!-- Name -->
+                                                    <div class="name">
+                                                        <span>A C Nice</span>
+                                                    </div>
+                                                    <!-- CA1 -->
+                                                    <div class="ca1">
+                                                        <span>05</span>
+                                                    </div>
+                                                    <!-- CA2 -->
+                                                    <div class="ca2">
+                                                        <span>07</span>
+                                                    </div>
+                                                    <!-- exams -->
+                                                    <div class="exams">
+                                                        <span>35</span>
+                                                    </div>
+                                                    <!-- Delete div -->
+                                                    <div class="delete border-left border-secondary">
+                                                        <!-- delete button -->
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- Save button -->
+                                    <button type="button" class="btn btn-primary px-5 py-2 float-right">Save</button>
+                                </div>
+
+                                <!-- Tab pane two -->
+                                <div class="tab-pane fade" id="subject-2">
+                                <!-- Tab pane title -->
+                                    <h4 class="text-primary">
+                                        English 
+                                    </h4>
+                                    <h6 class="text-primary">
+                                        Grade Report Sheet
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 
+                            |****************************************************| 
+                            |        R I G H T       H A N D         SIDE        |
+                            |****************************************************| 
+                        -->
+                        <div class="col-lg-4">
+                            <div class="card rounded h-100 shadow-sm">
+                                <div class="card-body pb-5 pb-lg-0">
+                                    <h4 class="text-center">Student's Ranking</h4>
+                                    <p class="text-primary text-center">Rank Based on Current Form</p>
+
+                                    <!-- class rating -->
+                                    <div class="media rounded bg-tertiary my-3 px-3 py-4">
+                                        <!-- user icon -->
+                                        <img src="./assets/avatar/2.jpeg" width="45px" class="img-fluid rounded-circle" alt="">
+                                        <!-- user details -->
+                                        <div class="media-body ml-3">
+                                            <!-- student name and points -->
+                                            <div class="d-flex justify-content-between px-3">
+                                                <h6 class="text-primary font-weight-bold">Emmanuella Chinuaka O.</h6>
+                                                <h6 class="text-muted font-weight-bold">78pts</h6>
+                                            </div>
+                                            <!-- divider -->
+                                            <hr class="my-0 border-bottom border-top border-secondary">
+                                            <!-- Student position -->
+                                            <div class="px-3">
+                                                <small class="text-muted">Current Position: </small>
+                                                <!-- 1st Place -->
+                                                <p class="text-success d-inline-block font-weight-bold m-0">1st</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- class rating -->
+                                    <div class="media rounded bg-tertiary my-3 px-3 py-4">
+                                        <!-- user icon -->
+                                        <img src="./assets/avatar/3.jpeg" width="45px" class="img-fluid rounded-circle" alt="">
+                                        <!-- user details -->
+                                        <div class="media-body ml-3">
+                                            <!-- student name and points -->
+                                            <div class="d-flex justify-content-between px-3">
+                                                <h6 class="text-primary font-weight-bold">A C Nice</h6>
+                                                <h6 class="text-muted font-weight-bold">45pts</h6>
+                                            </div>
+                                            <!-- divider -->
+                                            <hr class="my-0 border-bottom border-top border-secondary">
+                                            <!-- Student position -->
+                                            <div class="px-3">
+                                                <small class="text-muted">Current Position: </small>
+                                                <!-- 2nd place -->
+                                                <p class="text-warning d-inline-block font-weight-bold m-0">2nd</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- class rating -->
+                                    <div class="media rounded bg-tertiary my-3 px-3 py-4">
+                                        <!-- user icon -->
+                                        <img src="./assets/avatar/4.png" width="45px" class="img-fluid rounded-circle" alt="">
+                                        <!-- user details -->
+                                        <div class="media-body ml-3">
+                                            <!-- student name and points -->
+                                            <div class="d-flex justify-content-between px-3">
+                                                <h6 class="text-primary font-weight-bold">Cherechi Williams</h6>
+                                                <h6 class="text-muted font-weight-bold">70pts</h6>
+                                            </div>
+                                            <!-- divider -->
+                                            <hr class="my-0 border-bottom border-top border-secondary">
+                                            <!-- Student position -->
+                                            <div class="px-3">
+                                                <small class="text-muted">Current Position: </small>
+                                                <!-- 3rd place -->
+                                                <p class="text-danger d-inline-block font-weight-bold m-0">3rd</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- class rating -->
+                                    <div class="media rounded bg-tertiary my-3 px-3 py-4">
+                                        <!-- user icon -->
+                                        <img src="./assets/avatar/1.jpeg" width="45px" class="img-fluid rounded-circle" alt="">
+                                        <!-- user details -->
+                                        <div class="media-body ml-3">
+                                            <!-- student name and points -->
+                                            <div class="d-flex justify-content-between px-3">
+                                                <h6 class="text-primary font-weight-bold">Cynthia O.</h6>
+                                                <h6 class="text-muted font-weight-bold">68pts</h6>
+                                            </div>
+                                            <!-- divider -->
+                                            <hr class="my-0 border-bottom border-top border-secondary">
+                                            <!-- Student position -->
+                                            <div class="px-3">
+                                                <small class="text-muted">Current Position: </small>
+                                                <!-- 4th place -->
+                                                <p class="text-info d-inline-block font-weight-bold m-0">4th</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- view more link -->
+                                    <a href="#" class="text-primary text-center d-block mt-5">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <a href="javascript:void(0)" class="sidebar-overlay"></a>
+
+
+
+        </section>
+    </section>
+
+
+    
+
+    <!-- jQuery Link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+     <!-- Popper JS Link -->
+    <script src="./vendor/popper.js/umd/popper.min.js"></script>
+    <!-- Bootstrap JS Link -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+   
+    <!-- Custom JS Link -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

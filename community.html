@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Unifi</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo/logo.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <!-- Custom CSS Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- 
+        ========================  P R E L O A D E R  =======================
+    -->
+    <div id="preloader">
+        <img loading="lazy" src="./assets/preloader/loader (2).gif" alt="preloader">
+    </div>
+
+    <!-- 
+        ========================  W R A P P E R  =======================
+    -->
+    <section id="wrapper">
+        <!-- 
+            ========================  S I D E B A R  =======================
+        -->
+        <section id="sidebar" class="shadow-sm">
+            <div class="sidebar-brand">
+                <span class="btn btn-primary mr-2 mb-2"><i class="fas fa-align-right"></i></span>
+                <span class="text text-primary">Uni</span><span class="text text-secondary">Fi</span>
+            </div>
+
+            <!-- Media Workspace -->
+            <div class="media p-3 rounded bg-light">
+                <div class="d-flex justify-content-center align-items-center" style="height: 35px; width: 35px;">
+                    <!-- image -->
+                    <img src="./assets/avatar/1.jpeg" class="img-fluid rounded-circle"  alt="">
+                </div>
+
+                <!-- text -->
+                <div class="media-body">
+                    <div class="row m-0 justify-content-between">
+                        <div class="col-9">                                
+                            <h6 class="font-weight-bold text-primary mb-0">Fine Arts</h6>
+                            <span class=" text-primary">Workspace</span>
+                        </div>
+                        <div class="col-2">
+                            <i class="fas fa-sync text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="list-unstyled sidebar-nav">
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Dashboard Link -->
+                    <a href="index.html" class="sidebar-link">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Commmunity Link -->
+                    <a href="community.html" class="sidebar-link active">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Inspirations Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-book-open"></i>
+                        Inspirations
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Chat Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-comments"></i>
+                        Chat
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-user-friends"></i>
+                        Teachers
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Sidebar Item -->
+                <li class="sidebar-item dropdown">
+                    <!-- Account Link -->
+                    <a href="#account" class="sidebar-link" aria-expanded="false" data-toggle="collapse">
+                        <i class="fas fa-credit-card"></i>
+                        Account
+                        <!-- arrow -->
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="collapse list-unstyled" id="account">
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 1
+                            </a>
+                        </li>
+
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Sidebar Item -->
+                <li class="sidebar-item dropdown">
+                    <!-- Library Link -->
+                    <a href="#library" class="sidebar-link" aria-expanded="false" data-toggle="collapse">
+                        <i class="fas fa-book"></i>
+                        Library
+                        <!-- arrow -->
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="collapse list-unstyled" id="library">
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 1
+                            </a>
+                        </li>
+
+                        <!-- sidebar dropdown item and link -->
+                        <li>
+                            <a class="sidebar-link" href="">
+                                <i class="fas fa-eject"></i>
+                                Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-question-circle"></i>
+                        Help
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="shortcut text-primary font-weight-bold">SHORTCUTS</h6>
+
+            <ul class="list-unstyled sidebar-nav">
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Subject/Courses Link -->
+                    <a href="subject.html" class="sidebar-link">
+                        <i class="fas fa-edit"></i>
+                        Subject/Courses
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Academic Session Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-dharmachakra"></i>
+                        Academic Session
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Add shortcut Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-plus"></i>
+                        Add shortcut
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- 
+            ========================  M A I N - P A G E  =======================
+        -->
+        <section id="mainpage">
+            <!-- 
+                ========================  N A V B A R  =======================
+            -->
+            <nav class="navbar navbar-light py-3">
+                <a href="javascript:void(0)" id="sidebar-toggle" class="sidebar-brand">
+                    <span class="btn btn-primary mr-2 d-block d-xl-none"><i class="fas fa-align-right"></i></span>
+                </a>
+
+                <!-- navbar - nav -->
+                <ul class="navbar-nav d-flex flex-row ml-auto">
+                    <!-- nav-item -->
+                    <li class="nav-item">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" class="nav-link search bg-white shadow-sm">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- N O T I F I C A T I O N  -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link bg-white shadow-sm">
+                            <i class="far fa-bell"></i>
+                            <span class="badge badge-pill badge-danger">3</span>
+                        </a>
+                        <div class="dropdown-menu notification shadow-sm">
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            
+                        </div>
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown border-left border-right mx-2 p-0"></li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link">
+                            <img src="./assets/avatar/4.png" class="rounded-circle" width="40px" height="40px" alt="">
+                        </a>
+                        <div class="dropdown-menu shadow-sm">
+                            <p class="mb-0 border-bottom name">Hello Daniel</p>
+                            <a href="#" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 
+                ========================  H E A D E R  =======================
+            -->
+            <header>
+                <div class="container-fluid">
+                    <!-- callout -->
+                    <h1 class="text-primary">Hello, Admin</h1>
+                    <!-- text -->
+                    <p class="text-muted">Royal Decency International College</p>
+                </div>
+            </header>
+
+
+
+            <!-- 
+                ======================== P A G E     I T E M S  =======================
+            -->
+            <section class="pageitems">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7 mb-5">
+                            <div class="card rounded shadow-sm mb-4">
+                                <div class="card-body my-3">
+                                    <!-- card title -->
+                                    <h5 class="card-title mb-4">
+                                        Create post
+                                    </h5>
+
+                                    <!-- create post form -->
+                                    <form class="create-post">
+                                        <!-- create post div -->
+                                        <div class="input-group bg-light rounded p-3">
+                                            <!-- icon div -->
+                                            <div class="input-group-prepend align-self-start">
+                                                <span class="input-group-text bg-white border-0 rounded-circle p-3 shadow-sm">
+                                                    <!-- icon -->
+                                                    <i class="far fa-comment-dots" style="font-size: 20px;"></i>
+                                                </span>
+                                            </div>
+
+                                            <!-- create post textarea -->
+                                            <textarea rows="2" class="form-control border-0 mx-md-4 mx-sm-2 py-0" style="top:1px; background-color: transparent !important;" placeholder="What's up, Daniel?" ></textarea>
+                                        </div>
+
+
+                                        <!-- functional buttons -->
+                                        <div class="buttons d-sm-flex justify-content-between mt-4">
+                                            <!-- buttons at left hand side -->
+                                            <div class="left mb-3">
+                                                <!-- image button -->
+                                                <button type="button" class="btn">
+                                                    <i class="far fa-image" style="font-size: 17px;"></i>
+                                                    &nbsp;
+                                                    <span class="text-muted">
+                                                        Image
+                                                    </span>
+                                                </button>
+
+                                                <!-- divider -->
+                                                <span class="border mr-2"></span>
+
+                                                <!-- video button -->
+                                                <button type="button" class="btn">
+                                                    <i class="fas fa-video" style="font-size: 17px;"></i>
+                                                    &nbsp;
+                                                    <span class="text-muted">
+                                                        Video
+                                                    </span>
+                                                </button>
+                                            </div>
+
+                                            <!-- submit form button -->
+                                            <button type="submit" class="btn btn-primary float-right px-4 py-2 align-self-center">
+                                                <i class="far fa-paper-plane" style="font-size: 15px;"></i>
+                                                &nbsp;
+                                                Publish
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <!-- P O S T -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <div class="card-body my-3">
+                                    <!-- card info header -->
+                                    <div class="card-info-header d-flex justify-content-between">
+                                        <!-- header -->
+                                        <div class="header d-flex">
+                                            <!-- posters image -->
+                                            <img src="./assets/avatar/2.jpeg" width="35px" height="35px" alt="" class="img-fluid align-self-start mr-2 rounded-circle">
+
+                                            <div class="user-id">
+                                                <!-- card title -->
+                                                <h6 class="card-title mb-n1">
+                                                    Lucia Schaefer
+                                                </h6>
+                                                <!-- card-post-info -->
+                                                <p class="card-post-info text-muted mt-n4">
+                                                    <span class="post-time">
+                                                        5 mins ago
+                                                    </span>
+                                                    <span style="margin-top: -14px; bottom: 2px; font-size: 30px;">.</span>
+                                                    <span class="privacy">
+                                                        Public
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- button at right top -->
+                                        <div class="card-buttons">
+                                            <button class="btn">
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- main post -->
+                                    <div class="main-post bg-light rounded px-3 py-4">
+                                        <div class="media">
+                                            <!-- post icon -->
+                                            <span class="post-icon align-self-start rounded-circle mr-3 d-flex justify-content-center align-items-center bg-white shadow-sm" style="height: 40px; width: 40px;">
+                                                <i class="fas fa-hand-paper text-warning" style="font-size: 20px;"></i>
+                                            </span>
+
+                                            <!-- post text -->
+                                            <div class="media-body">
+                                                <p class="text-muted">
+                                                    Hi! I'm a beginner interior designer and I'm looking for someone who would like to work on a project together.
+                                                    Someone willing? &nbsp; <!-- emoji icon --> <i class="fas fa-grin text-warning" style="font-size: 18px;"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 
+                                        lets make a choice on how the post buttons would be
+
+                                     -->
+
+                                     <!-- 
+                                         |*********|
+                                         |    A    |
+                                         |*********|
+                                      -->
+                                    <div class="post-action-buttons d-flex justify-content-between px-lg-4 mt-4">
+                                        <!-- like button -->
+                                        <button type="button" class="btn">
+                                            <i class="far fa-heart" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                184 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Likes
+                                                </span> 
+                                            </span>
+                                        </button>
+
+                                        <!-- comments button -->
+                                        <button type="button" class="btn">
+                                            <i class="far fa-comments" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                56 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Comments
+                                                </span> 
+                                            </span>
+                                        </button>
+                                        
+                                        <!-- share button -->
+                                        <button type="button" class="btn">
+                                            <i class="fas fa-share-alt" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                5 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Shares
+                                                </span> 
+                                            </span>
+                                        </button>
+                                    </div>                               
+                                </div>
+                                
+                            </div>
+
+                            <!-- P O S T -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <div class="card-body my-3">
+                                    <!-- card info header -->
+                                    <div class="card-info-header d-flex justify-content-between">
+                                        <!-- header -->
+                                        <div class="header d-flex">
+                                            <!-- posters image -->
+                                            <img src="./assets/avatar/3.jpeg" width="35px" height="35px" alt="" class="img-fluid align-self-start mr-2 rounded-circle">
+
+                                            <div class="user-id">
+                                                <!-- card title -->
+                                                <h6 class="card-title mb-n1">
+                                                    Raul Jimenez
+                                                </h6>
+                                                <!-- card-post-info -->
+                                                <p class="card-post-info text-muted mt-n4">
+                                                    <span class="post-time">
+                                                        10 mins ago
+                                                    </span>
+                                                    <span style="margin-top: -14px; bottom: 2px; font-size: 30px;">.</span>
+                                                    <span class="privacy">
+                                                        Public
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- button at right top -->
+                                        <div class="card-buttons">
+                                            <button class="btn">
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- main post -->
+                                    <div class="main-post bg-light rounded px-3 py-4">
+                                        <div class="media">
+                                            <!-- post icon -->
+                                            <span class="post-icon align-self-start rounded-circle mr-3 d-flex justify-content-center align-items-center bg-white shadow-sm" style="height: 40px; width: 40px;">
+                                                <i class="fas fa-hand-paper text-warning" style="font-size: 20px;"></i>
+                                            </span>
+
+                                            <!-- post text -->
+                                            <div class="media-body">
+                                                <p class="text-muted">
+                                                    Hi! I'm a beginner interior designer and I'm looking for someone who would like to work on a project together.
+                                                    Someone willing? &nbsp; <!-- emoji icon --> <i class="fas fa-grin text-warning" style="font-size: 18px;"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 
+                                         |*********|
+                                         |    B    |
+                                         |*********|
+                                      -->
+                                    <div class="post-action-buttons mt-4">
+                                        <!-- like button -->
+                                        <button type="button" class="btn">
+                                            <i class="fas fa-heart text-danger" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                98 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Likes
+                                                </span> 
+                                            </span>
+                                        </button>
+
+                                        <!-- comments button -->
+                                        <button type="button" class="btn">
+                                            <i class="far fa-comments" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                24 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Comments
+                                                </span>
+                                            </span>
+                                        </button>
+                                        
+                                        <!-- share button -->
+                                        <button type="button" class="btn">
+                                            <i class="fas fa-share-alt" style="font-size: 17px;"></i>
+                                            &nbsp;
+                                            <span class="text-muted">
+                                                2 
+                                                <span class="d-none d-lg-inline-flex">
+                                                    Shares
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>                               
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-5">
+                            <!-- T A B S -->
+                            <div class="tabs">
+                                <!-- tab nav -->
+                                <ul class="nav nav-pills d-flex justify-content-between">
+                                    <!-- event pill -->
+                                    <li class="nav-item">
+                                        <a href="#events" data-toggle="pill" class="nav-link rounded active">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <!-- news pill -->
+                                    <li class="nav-item">
+                                        <a href="javscript:void(0)" data-toggle="pill" class="nav-link rounded">
+                                            News
+                                        </a>
+                                    </li>
+                                    <!-- soon pill -->
+                                    <li class="nav-item">
+                                        <a href="javscript:void(0)" data-toggle="pill" class="nav-link rounded">
+                                            Soon
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- T A B     C O N T E N T     S E C T I O N -->
+                                <div class="tab-content">
+                                    <!-- A C T I V E     T A B - PA N E -->
+                                    <div class="tab-pane active" id="events"> 
+                                        <!-- Tab card -->
+                                        <div class="card shadow-sm rounded">
+                                            <div class="card-body">
+                                                <!-- card title -->
+                                                <h5 class="card-title mb-4">
+                                                    Upcoming events
+                                                </h5>
+
+                                                <!-- Event Header -->
+                                                <div class="event-header mb-3 d-flex justify-content-between">
+                                                    <div class="event-title">
+                                                        <!-- Event image -->
+                                                        <img src="./assets/avatar/3.jpeg" width="40px" height="40px" alt="" class="img-fluid align-self-start my-3 rounded-circle">
+
+                                                        <!-- Event Title -->
+                                                        <h4 class="card-title">
+                                                            Children's room
+                                                        </h4>
+                                                        <!-- Event text -->
+                                                        <p class="text-muted">
+                                                            The baby will be born soon. Will we try to prepare something for this occasion?
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- Event Date -->
+                                                    <div class="event-date align-self-center">
+                                                        <span style="height: 130px; display: flex; justify-content: center; align-items: center; width: 80px" class="date rounded bg-light">
+                                                            <span>
+                                                                <span class="card-title d-block mb-n1" style="font-size: 30px; font-weight: 600;">13</span>
+                                                                MON
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Event details section -->
+                                                <div class="event-details mb-5">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title">Details</h6>
+                                                     <!-- card info -->
+                                                    <div class="card-info mt-3">
+                                                        <!-- task -->
+                                                        <p class="text-muted mb-3">
+                                                            <i class="fas fa-qrcode"></i>
+                                                            &nbsp;
+                                                            Task: 
+                                                            <span>
+                                                                Practice
+                                                            </span>
+                                                        </p>
+                                                        <!-- date -->
+                                                        <p class="text-muted">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                            &nbsp;
+                                                            Date: 
+                                                            <span>
+                                                                13.07 - 
+                                                                01.08.2020
+                                                            </span>
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- users -->
+                                                    <div class="users float-right">
+                                                        <!-- user 3 img -->
+                                                        <span class="user user-3">
+                                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                                        </span>
+                                                        <!-- user 2 img -->
+                                                        <span class="user user-2">
+                                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                                        </span>
+                                                        <!-- user 1 img -->
+                                                        <span class="user user-1">
+                                                            <img src="./assets/avatar/1.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Event resource section -->
+                                                <div class="event-resources mb-3">
+                                                    <!-- title -->
+                                                    <h6 class="card-title">Resources</h6>
+                                                     <div class="row justify-content-between">
+                                                         <!-- Wireframe -->
+                                                        <div class="col-6">
+                                                            <div class="bg-light rounded p-3">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <!-- Title -->
+                                                                    <p class="text-muted mb-0 align-self-center">
+                                                                        Wireframes
+                                                                    </p>
+
+                                                                    <!-- button at right top -->
+                                                                    <div class="card-buttons">
+                                                                        <button class="btn">
+                                                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- item -->
+                                                                <span style="display: inline-flex; height: 45px; width: 45px;" class="bg-primary m-1 justify-content-center align-items-center rounded">
+                                                                    <i class="fas fa-vector-square text-white" style="font-size: 23px;"></i>
+                                                                </span>
+
+                                                                <!-- item -->
+                                                                <span style="display: inline-flex; height: 45px; width: 45px;" class="bg-primary m-1 justify-content-center align-items-center rounded">
+                                                                    <i class="fas fa-vector-square text-white" style="font-size: 23px;"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="bg-light rounded p-3">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <!-- Title -->
+                                                                    <p class="text-muted mb-0 align-self-center">
+                                                                        Instructions
+                                                                    </p>
+
+                                                                    <!-- button at right top -->
+                                                                    <div class="card-buttons">
+                                                                        <button class="btn">
+                                                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- item -->
+                                                                <span style="display: inline-flex; height: 45px; width: 45px;" class="bg-white m-1 justify-content-center align-items-center rounded">
+                                                                    <i class="fas fa-file text-light" style="font-size: 23px;"></i>
+                                                                </span>
+
+                                                                <!-- item -->
+                                                                <span style="display: inline-flex; height: 45px; width: 45px;" class="bg-white m-1 justify-content-center align-items-center rounded">
+                                                                    <i class="fas fa-file text-light" style="font-size: 23px;"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Button -->
+                                                    <button type="button" class="btn btn-primary my-5 px-4 py-2">
+                                                        <i class="fas fa-check" style="font-size: 15px;"></i>
+                                                        &nbsp;
+                                                        Take part
+                                                    </button>
+                                                    <!-- bookmark button -->
+                                                    <button type="button" class="btn my-5">
+                                                        <i class="far fa-bookmark" style="font-size: 15px;"></i>
+                                                    </button>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <a href="javascript:void(0)" class="sidebar-overlay"></a>
+
+
+
+        </section>
+    </section>
+
+
+    
+
+    <!-- jQuery Link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS Link -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
